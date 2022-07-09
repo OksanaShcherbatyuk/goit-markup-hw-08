@@ -1,0 +1,38 @@
+.main-banner {
+    /*max-width: 1600px;*/
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #C4C4C4;
+    background-image: linear-gradient(to bottom,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../images/bg-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    /* text-align: center;*/
+
+}
+
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-slogan {
+    margin-bottom: 30px;
+
+    color: var(--background-color);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+
+}

@@ -1,0 +1,52 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color-primary);
+}
+
+.nav,
+.main-banner,
+.nav-panel,
+.contacts-container {
+    display: flex;
+    align-items: center;
+}
+
+/*.wrapper {
+    max-width: 1600px;
+}*/
+.section {
+    padding-top: var(--set-gap94);
+}
+
+.advantages,
+.whatwedo-container,
+.team-list,
+.client-set {
+    display: flex;
+    justify-content: space-between;
+}
+.section-gap,
+.examples {
+    padding-top: var(--set-gap94);
+    padding-bottom: var(--set-gap94);
+}
+
+.whatwedo h2,
+.team h2,
+.clients h2 {
+    color: var(--text-color-primary);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.whatwedo,
+.team,
+.portfolio,
+.clients {
+    padding-bottom: var(--set-gap94);
+}
+
