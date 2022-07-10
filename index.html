@@ -19,7 +19,7 @@
         <div class="container flex header__container">
           <a class="logo__header" href="./index.html"><span class="logo-brand">Web</span>Studio</a>
           <nav class="nav">
-                <ul class="nav-list">
+                <ul class="nav__list">
                     <li class="nav-item"><a class="nav-link active" href="./index.html">Студия</a></li>
                     <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
                     <li class="nav-item"><a class="nav-link" href="#footer">Контакты</a></li>
@@ -474,21 +474,22 @@
             </div>
         </section>
     </main>
-    <!-- footer container 
+    <!-- footer container -->
     <footer id="footer">
         <div class="container footer__container">
+        <div class="footer-flex">
             <div class="footer__left">
             
             <a class="logo logo__footer" href="./index.html"><span class="logo__footer--brand">Web</span>Studio</a>
             <ul>
                 <li class="footer__address">
-                    <address class="link address__link address__link--white">г. Киев, пр-т Леси Украинки, 26</address>
+                    <address class="address__link address__link--white">г. Киев, пр-т Леси Украинки, 26</address>
                 </li>
                 <li class="footer__address">
-                    <a class="link address__link address__link--grey" href="mailto:info@example.com">info@example.com</a>
+                    <a class="address__link address__link--grey" href="mailto:info@example.com">info@example.com</a>
                 </li>
                 <li class="footer__address">
-                    <a class="link address__link address__link--grey" href="tel:+380991111111">+38 099 111 11 11</a>
+                    <a class="address__link address__link--grey" href="tel:+380991111111">+38 099 111 11 11</a>
                 </li>
             </ul>
             </div>
@@ -525,11 +526,14 @@
                 </li>
             </ul>
             </div>
-            <div class="footer__right">
+
+        
+            <div class="footer__form">
                 <strong class="join">подпишитесь на рассылку</strong>
                 <form class="newsletter">
-                    <input type="email" class="newsletter-input" name="user-email" placeholder="E-mail">
-                    <div class="newsletter-container">
+                    <div class="newsletter-container">               
+                    <input type="email" class="newsletter-input" name="user-email" placeholder="E-mail" required>
+                    
                         <button type="submit" class="newsletter-submit">Подписаться
                             <svg width="24" height="24">
                                 <use href="./images/icons/icons.svg#icon-send "></use>
@@ -539,7 +543,8 @@
                 </form>
             </div>
         </div>
-    </footer>-->
+        </div>
+    </footer>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
