@@ -25,33 +25,24 @@ body {
   align-items: center;
 }
 
-.advantages,
+/*.advantages,
 .whatwedo-container,
 .team-list,
 .client-set {
-  display: flex;
-  justify-content: space-between;
-}
-
+    display: flex;
+    justify-content: space-between;
+}*/
 /*.wrapper {
     max-width: 1600px;
 }*/
-.section {
-  padding-top: var(--set-gap94);
-}
-
 .section__title {
   margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
-}
-
-.advantages,
-.whatwedo-container,
-.team-list,
-.client-set {
-  display: flex;
-  justify-content: space-between;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .section-gap,
@@ -72,13 +63,16 @@ body {
   /*margin-bottom: 50px;*/
 }
 
-.whatwedo,
+/*.whatwedo,
 .team,
 .portfolio,
 .clients {
-  padding-bottom: var(--set-gap94);
+    padding-bottom: var(--set-gap94);
 }
 
+.section {
+    padding-top: var(--set-gap94);
+}*/
 a {
   text-decoration: none;
   cursor: pointer;
@@ -713,13 +707,25 @@ button {
 
 .banner-slogan {
   margin-bottom: 30px;
-  color: var(--background-color);
+  max-width: 360px;
+  margin-top: 0;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 900;
   text-transform: uppercase;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-align: center;
+  color: var(--background-color);
+}
+@media screen and (min-width: 1200px) {
+  .banner-slogan {
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .advantages-list {
@@ -809,6 +815,20 @@ button {
 
 .team {
   background-color: #f5f4fa;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__item {
@@ -880,43 +900,92 @@ button {
   text-align: center;
 }
 
-.client-list {
-  display: block;
-  margin-right: var(--set-gap30);
+.clients {
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
-.client-list:last-child {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-/*.client-list:last-child {
-    margin-right: 0;
-}*/
-.client-container {
+.client-set {
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .client-set {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-set {
+    margin-top: 50px;
+  }
+}
+
+.client-item {
+  width: calc((100% - 30px) / 2);
   height: 92px;
-  width: 170px;
+}
+@media screen and (min-width: 768px) {
+  .client-item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-item {
+    width: calc((100% - 150px) / 6);
+  }
+}
+
+.client-soc-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: transparent;
+  margin-right: 30px;
+  /*height: 92px;
+  width: 170px;*/
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #afb1b8;
-  outline: transparent;
+  fill: #afb1b8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client-container:hover {
-  color: var(--brand-color);
+.client-soc-link:hover {
+  fill: var(--brand-color);
   border: 1px solid var(--brand-color);
 }
-.client-container:focus {
-  color: var(--brand-color);
+.client-soc-link:focus {
+  fill: var(--brand-color);
   border: 1px solid var(--brand-color);
 }
 
 .client-icon {
-  fill: currentColor;
-  display: block;
-  width: 106px;
-  height: 60px;
+  width: calc((100% - 30px) / 2);
+  height: 92px;
+}
+@media screen and (min-width: 768px) {
+  .client-icon {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-icon {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 #footer {

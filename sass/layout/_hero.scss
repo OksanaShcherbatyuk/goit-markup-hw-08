@@ -59,13 +59,21 @@
 
 .banner-slogan {
     margin-bottom: 30px;
-
-    color: var(--background-color);
+    max-width: 360px;
+    margin-top: 0;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     letter-spacing: 0.06em;
     text-align: center;
-
+    color: var(--background-color);
+    @media screen and (min-width: 1200px) {
+            max-width: 696px;
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+        }
 }

@@ -12,33 +12,28 @@ body {
     align-items: center;
 }
 
-.advantages,
+/*.advantages,
 .whatwedo-container,
 .team-list,
 .client-set {
     display: flex;
     justify-content: space-between;
-}
+}*/
 /*.wrapper {
     max-width: 1600px;
 }*/
-.section {
-    padding-top: var(--set-gap94);
-}
+
 
 .section__title {
     margin-top: 0;
     margin-bottom: 50px;
     text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
 }
 
-.advantages,
-.whatwedo-container,
-.team-list,
-.client-set {
-    display: flex;
-    justify-content: space-between;
-}
 .section-gap,
 .examples {
     padding-top: var(--set-gap94);
@@ -57,10 +52,14 @@ body {
     /*margin-bottom: 50px;*/
 }
 
-.whatwedo,
+/*.whatwedo,
 .team,
 .portfolio,
 .clients {
     padding-bottom: var(--set-gap94);
 }
+
+.section {
+    padding-top: var(--set-gap94);
+}*/
 
