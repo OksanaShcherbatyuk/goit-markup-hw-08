@@ -1,23 +1,56 @@
 .main-banner {
-    /*max-width: 1600px;*/
-    min-height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #C4C4C4;
-    background-image: linear-gradient(to bottom,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url(../images/bg-image.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    /* text-align: center;*/
-
+    background-color: var(--header-background-color);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/background/mob-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+        padding-bottom: 118px;
+        padding-top: 118px;
+        max-width: 1600px;
+        margin: 0 auto;
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/background/mob-bg2x.jpg);
+        }
+    
+        @media screen and (min-width: 768px) {
+            padding-top: 118px;
+            padding-bottom: 118px;
+            background-color: var(--header-background-color);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/background/tab-bg.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(../images/background/tab-bg2x.jpg);
+            }
+        }
+    
+        @media screen and (min-width: 1200px) {
+            padding-bottom: 200px;
+            padding-top: 200px;
+            background-color: var(--header-background-color);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/background/Background.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
 }
 
 .banner {
+    width: 100%;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;

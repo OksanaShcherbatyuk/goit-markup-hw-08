@@ -3,20 +3,33 @@ body {
     background-color: var(--background-color);
     color: var(--text-color-primary);
 }
-
-.nav,
+/*.flex {
+    display: flex;
+ }*/
 .main-banner,
-.nav-panel,
 .contacts-container {
     display: flex;
     align-items: center;
 }
 
+.advantages,
+.whatwedo-container,
+.team-list,
+.client-set {
+    display: flex;
+    justify-content: space-between;
+}
 /*.wrapper {
     max-width: 1600px;
 }*/
 .section {
     padding-top: var(--set-gap94);
+}
+
+.section__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .advantages,
@@ -41,6 +54,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
+    /*margin-bottom: 50px;*/
 }
 
 .whatwedo,

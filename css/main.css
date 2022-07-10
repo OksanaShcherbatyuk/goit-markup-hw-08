@@ -1,5 +1,6 @@
 :root {
   --background-color: #ffffff;
+  --header-background-color: #2F303A;
   --brand-color: #2196F3;
   --text-color-primary: #212121;
   --text-color-secondary: #757575;
@@ -15,12 +16,21 @@ body {
   color: var(--text-color-primary);
 }
 
-.nav,
+/*.flex {
+    display: flex;
+ }*/
 .main-banner,
-.nav-panel,
 .contacts-container {
   display: flex;
   align-items: center;
+}
+
+.advantages,
+.whatwedo-container,
+.team-list,
+.client-set {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*.wrapper {
@@ -28,6 +38,12 @@ body {
 }*/
 .section {
   padding-top: var(--set-gap94);
+}
+
+.section__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .advantages,
@@ -53,6 +69,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
+  /*margin-bottom: 50px;*/
 }
 
 .whatwedo,
@@ -63,10 +80,6 @@ body {
 }
 
 a {
-  text-decoration: none;
-}
-
-.link {
   text-decoration: none;
   cursor: pointer;
 }
@@ -90,13 +103,49 @@ p,
   display: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
 .container {
-  max-width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav {
+    display: flex;
+  }
 }
 
 .nav-item:not(:last-child) {
@@ -114,14 +163,19 @@ p,
 
 .nav-link.active::after {
   display: inline-block;
-  position: absolute;
   content: "";
+  position: absolute;
   width: 100%;
   height: 4px;
   background-color: var(--brand-color);
   border-radius: 2px;
   bottom: 0;
   left: 0;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
 }
 
 .nav-link {
@@ -131,23 +185,18 @@ p,
   color: var(--text-color-primary);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.33;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
-.nav-link:focus {
-  color: var(--brand-color);
-}
-.nav-link:hover {
+.nav-link:focus, .nav-link:hover {
   color: var(--brand-color);
 }
 
 /*.nav-contacts:not(:last-child) {
     margin-right: 50px;
 }*/
-.nav-panel a {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /*.nav-contacts a {
     display: inline-flex;
     padding-top: 32px;
@@ -161,49 +210,31 @@ p,
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }*/
-.nav-contacts {
-  align-items: center;
-  margin-bottom: 0;
-}
-.nav-contacts a {
-  display: inline-flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: var(--text-color-secondary);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.nav-contacts a:hover {
-  color: var(--brand-color);
-}
-.nav-contacts a:focus {
-  color: var(--brand-color);
-}
-.nav-contacts:not(:last-child) {
-  margin-right: 50px;
-}
-
 .logo__header {
-  margin-right: 93px;
+  display: block;
+  margin-right: 70px;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 24px;
   padding-bottom: 25px;
-  color: #000000;
-}
-
-.logo {
   font-family: "Raleway", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  color: #000000;
 }
 
+/*.logo {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+}*/
 .logo-brand {
   color: var(--brand-color);
 }
@@ -546,33 +577,134 @@ button {
   border-bottom: 1px solid #ececec;
 }
 
+.header__container {
+  justify-content: space-between;
+  text-align: center;
+  display: flex;
+}
+
 .contacts-container {
   margin-left: auto;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts-container {
+    display: flex;
+    margin-left: 84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-container {
+    display: flex;
+  }
+}
+
+.contacts-list {
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .contacts-list {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    display: flex;
+  }
+}
+
+.contacts-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.contacts-info a {
+  display: inline-flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  height: 100%;
+  color: var(--text-color-secondary);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  align-items: center;
+  justify-content: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-info a:hover, .contacts-info a:focus {
+  color: var(--brand-color);
+}
+.contacts-info:not(:last-child) {
+  margin-right: 50px;
+}
+@media screen and (min-width: 768px) {
+  .contacts-info {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-info {
+    margin-right: 50px;
+    margin-bottom: 0px;
+  }
 }
 
 .icon-contacts {
   display: flex;
   fill: currentColor;
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-banner {
-  /*max-width: 1600px;*/
-  min-height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #C4C4C4;
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-image.jpg);
-  background-position: center;
+  background-color: var(--header-background-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/mob-bg.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  min-height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  /* text-align: center;*/
+  padding-bottom: 118px;
+  padding-top: 118px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main-banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/mob-bg2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-banner {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-color: var(--header-background-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/tab-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .main-banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/tab-bg2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-banner {
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background-color: var(--header-background-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/Background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .banner {
+  width: 100%;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -625,12 +757,6 @@ button {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-.section__title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  text-align: center;
 }
 
 .whatwedo-list {
@@ -848,6 +974,12 @@ button {
   display: inline-flex;
   margin-bottom: 20px;
   color: var(--background-color);
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .logo__footer--brand {
@@ -1078,4 +1210,23 @@ button {
   line-height: 1.88;
   letter-spacing: 0.03em;
   text-align: left;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }/*# sourceMappingURL=main.css.map */
