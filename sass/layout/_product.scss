@@ -14,18 +14,22 @@
 }
 
 .products-list {
-    flex-wrap: wrap;
-    padding-inline-start: 0px;
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    @media screen and (min-width: 768px) {
-            
-            justify-content: unset;
+    
+        margin: 0;
+        margin-bottom: 50px;
+        // --------
+        flex-wrap: wrap;
+    
+        @media screen and (min-width: 768px) {
+            flex-wrap: nowrap;
+            justify-content: center;
+    
         }
     
         @media screen and (min-width: 1200px) {
-            width: 1200px;
+            flex-wrap: nowrap;
+            justify-content: center;
     
         }
 }

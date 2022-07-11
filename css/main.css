@@ -1713,20 +1713,21 @@ button {
 }
 
 .products-list {
-  flex-wrap: wrap;
-  padding-inline-start: 0px;
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  margin: 0;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .products-list {
-    justify-content: unset;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .products-list {
-    width: 1200px;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 }
 
