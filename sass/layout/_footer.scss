@@ -122,6 +122,24 @@
             text-align: left;
         }
 }
+.join-subscribe {
+    
+        margin-bottom: 20px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #ffffff;
+        
+    
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
+}
+
+
 
 .footer__social {
     display: flex;
@@ -234,22 +252,32 @@
 }
 
 
-.newsletter {
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-}
+
 
 .newsletter-input {
+    display: block;
     color: var(--background-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    min-width: 358px;
-    min-height: 50px;
+    
+    height: 50px;
+    width: 100%;
     border-radius: 4px;
-    padding: 15px 16px;
-    margin-right: 12px;
+    padding: 10px;
+    margin-bottom: 20px;
     background-color: inherit;
     color: #fff
+    
+
+    @media screen and (min-width: 768px) {
+            width: 450px;
+        }
+    
+    
+    
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0px;
+            width: 358px
+        }
 }
 
 .newsletter input:placeholder-shown {
@@ -262,24 +290,37 @@
 
 
 .newsletter-container {
-    display: flex;
-    align-items: center;
-    position: relative;
+
+    @media screen and (min-width: 768px) {
+            // display: flex;
+            // telegram-down
+        }
+    
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+   
 }
 
 .newsletter-submit {
-    min-height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center
+    justify-content: center;
+    width: 200px;
+    height: 50px;
     background-color: var(--brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    border-radius: 4px
     font-size: 16px;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.87;
-    display: inline-block;
-    align-items: center;
-    text-align: center;
+    
     letter-spacing: 0.06em;
     color: #ffffff;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     svg {
             position: absolute;
             display: inline-block;
@@ -288,6 +329,14 @@
             top: 50%;
             right: 29px;
             transform: translateY(-50%);
+        }
+    @media screen and (min-width: 768px) {
+            margin-left: 12px;
+            margin: 0 auto;
+        }
+    
+    @media screen and (min-width: 1200px) {
+            margin-left: 12px;
         }
 }
 
