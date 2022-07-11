@@ -1363,16 +1363,16 @@ button {
   color: var(--brand-color);
 }
 
-.contacts-list {
+.contacts-list-footer {
   display: block;
 }
 @media screen and (min-width: 768px) {
-  .contacts-list {
+  .contacts-list-footer {
     margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .contacts-list {
+  .contacts-list-footer {
     margin-bottom: 0px;
   }
 }
