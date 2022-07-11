@@ -1274,6 +1274,22 @@ width: 100%; */
   }
 }
 
+.join-subscribe {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .join-subscribe {
+    text-align: left;
+  }
+}
+
 .footer__social {
   display: flex;
   justify-content: left;
@@ -1377,22 +1393,28 @@ width: 100%; */
   }
 }
 
-.newsletter {
-  width: 100%;
-  display: inline-flex;
-  align-items: center;
-}
-
 .newsletter-input {
+  display: block;
   color: var(--background-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  min-width: 358px;
-  min-height: 50px;
+  height: 50px;
+  width: 100%;
   border-radius: 4px;
-  padding: 15px 16px;
-  margin-right: 12px;
+  padding: 10px;
+  margin-bottom: 20px;
   background-color: inherit;
   color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .newsletter-input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .newsletter-input {
+    margin-bottom: 0px;
+    width: 358px;
+  }
 }
 
 .newsletter input:placeholder-shown {
@@ -1403,25 +1425,29 @@ width: 100%; */
   color: rgba(255, 255, 255, 0.6);
 }
 
-.newsletter-container {
-  display: flex;
-  align-items: center;
-  position: relative;
+@media screen and (min-width: 1200px) {
+  .newsletter-container {
+    display: flex;
+  }
 }
 
 .newsletter-submit {
-  min-height: 50px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
   background-color: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.87;
-  display: inline-block;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .newsletter-submit svg {
   position: absolute;
@@ -1431,6 +1457,17 @@ width: 100%; */
   top: 50%;
   right: 29px;
   transform: translateY(-50%);
+}
+@media screen and (min-width: 768px) {
+  .newsletter-submit {
+    margin-left: 12px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .newsletter-submit {
+    margin-left: 12px;
+  }
 }
 
 .newsletter-container > .newsletter-submit {
