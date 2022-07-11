@@ -29,18 +29,18 @@
 
 .mob-btn {
     display: block;
-        margin-left: auto;
-        background: none;
-        border-color: transparent;
-        fill: #212121;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-        &:hover,
-        &:focus {
-            fill: #2196F3;
-        }
+    margin-left: auto;
+    background: none;
+    border-color: transparent;
+    fill: #212121;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    
+
+    &:hover,
+    &:focus {
+        fill: #2196F3;
+    }
+
     .mob-btn-close:hover &,
     .mob-btn-close:focus & {
         fill: #2196F3;
@@ -54,9 +54,9 @@
         display: none;
 
     }
+
+
 }
-
-
 
 .mob-btn-close {
     display: block;
@@ -92,6 +92,7 @@
     font-weight: 500;
     font-size: 34px;
     line-height: 1.17;
+    /* identical to box height */
 
     letter-spacing: 0.02em;
 
@@ -110,6 +111,11 @@
 .mob-info:not(:last-child) {
     margin-bottom: 32px;
 }
+
+// .mob-list {
+//     // margin-top: 302px;
+
+// }
 
 .mob-soc-list {
     display: flex;

@@ -1,25 +1,18 @@
-@import "./utils/variables";
-
-@import "./base/common";
-@import "./base/reset";
-
-
-@import "./components/container";
-@import "./components/navigation";
-@import "./components/logo";
-@import "./components/buttonindex";
-@import "./components/buttonportfolio";
-@import "./components/mob-menu";
-@import "./components/modal";
-@import "./components/socials";
-
-@import "./layout/header";
-@import "./layout/hero";
-@import "./layout/advantages";
-@import "./layout/whatwedo";
-@import "./layout/team";
-@import "./layout/client";
-@import "./layout/footer";
-@import "./layout/product";
-
+@import "./header";
+@import "./components/nav";
+@import "./hero";
+@import "./about";
+@import "./about-second";
+@import "./team";
+@import "./components/contacts";
+@import "./utils/main-wrap";
+@import "./components/telegram";
+@import "./client";
+@import "./footer";
 @import "./utils/is-hiden";
+@import "./components/modal";
+@import "./utils/varss";
+@import "./utils/base";
+@import "./utils/container";
+@import "./components/mob-menu";
+@import "./porftolio";
