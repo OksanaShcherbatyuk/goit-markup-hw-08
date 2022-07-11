@@ -1396,6 +1396,7 @@ button {
 .join {
   display: block;
   margin-bottom: 20px;
+  text-align: center;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
