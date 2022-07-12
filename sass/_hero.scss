@@ -1,51 +1,51 @@
 .hero {
     background-color: var(--header-background-color);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../1/mob-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    padding-bottom: 118px;
-    padding-top: 118px;
-    max-width: 1600px;
-    margin: 0 auto;
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../1/mob-bg2x.jpg);
-    }
-
-    @media screen and (min-width: 768px) {
-        padding-top: 118px;
-        padding-bottom: 118px;
-        background-color: var(--header-background-color);
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../1/tab-bg.jpg);
+            url(../images/background/mob-bg.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-
+    
+        padding-bottom: 118px;
+        padding-top: 118px;
+        max-width: 1600px;
+        margin: 0 auto;
+    
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../1/tab-bg2x.jpg);
+                url(../images/background/mob-bg2x.jpg);
         }
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding-bottom: 200px;
-        padding-top: 200px;
-        background-color: var(--header-background-color);
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../1/Background.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
+    
+        @media screen and (min-width: 768px) {
+            padding-top: 118px;
+            padding-bottom: 118px;
+            background-color: var(--header-background-color);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/background/tab-bg.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(../images/background/tab-bg2x.jpg);
+            }
+        }
+    
+        @media screen and (min-width: 1200px) {
+            padding-bottom: 200px;
+            padding-top: 200px;
+            background-color: var(--header-background-color);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/background/Background.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
 
 
 }

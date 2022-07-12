@@ -221,7 +221,7 @@
 
 .hero {
   background-color: var(--header-background-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../1/mob-bg.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/mob-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -232,7 +232,7 @@
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../1/mob-bg2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/mob-bg2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -240,7 +240,7 @@
     padding-top: 118px;
     padding-bottom: 118px;
     background-color: var(--header-background-color);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../1/tab-bg.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/tab-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -248,7 +248,7 @@
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../1/tab-bg2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/tab-bg2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -256,7 +256,7 @@
     padding-bottom: 200px;
     padding-top: 200px;
     background-color: var(--header-background-color);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../1/Background.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/Background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
