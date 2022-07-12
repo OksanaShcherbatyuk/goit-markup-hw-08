@@ -40,7 +40,7 @@
 
     @media screen and (min-width: 768px) {
         display: flex;
-        margin-left: 84px;
+        
     }
 
     @media screen and (min-width: 1200px) {
@@ -52,7 +52,7 @@
 }
 
 .header__container {
-    justify-content: space-between;
+    
     text-align: center;
     display: flex;
 
@@ -154,7 +154,7 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    margin-right: 70px;
+    margin-right: 93px;
     color: var(--accent-color);
 
 }
