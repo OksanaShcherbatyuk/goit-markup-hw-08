@@ -504,12 +504,12 @@
 
 .team-title {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .team-item-title {
@@ -710,7 +710,7 @@
 .client-title {
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
